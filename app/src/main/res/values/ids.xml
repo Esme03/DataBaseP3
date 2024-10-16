@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_nombre" type="id" />
+    <item name="tv_pago" type="id" />
+    <item name="tv_concepto" type="id" />
+    <item name="edit" type="id" />
+    <item name="del" type="id" />
+    <item name="btn_comprar" type="id" />
+    <item name="btn_mostrar" type="id" />
+    <item name="et_name" type="id" />
+    <item name="et_context" type="id" />
+    <item name="et_prec" type="id" />
+    <item name="rv" type="id" />
+    <item name="btn_reg" type="id" />
+    <item name="et_user" type="id" />
+    <item name="et_pass" type="id" />
+    <item name="btn_actualizar" type="id" />
+    <item name="et_id" type="id" />
+    <item name="et_name1" type="id" />
+    <item name="et_context1" type="id" />
+    <item name="et_prec1" type="id" />
+</resources>
