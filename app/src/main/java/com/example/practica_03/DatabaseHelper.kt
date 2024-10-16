@@ -5,7 +5,6 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-// Definimos el nombre de la base de datos y la versión
 const val DATABASE_NAME = "mascotas.db"
 const val DATABASE_VERSION = 1
 
@@ -18,7 +17,6 @@ const val COL_TIPO = "tipo"
 const val COL_DUENO = "dueno"
 const val COL_VACUNADO = "vacunado"
 const val COL_PESO = "peso"
-
 // DatabaseHelper.kt
 class DatabaseHelper(context: Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -38,7 +36,7 @@ class DatabaseHelper(context: Context) :
         """
         db.execSQL(createTableQuery)
 
-        // Insertar 5 registros iniciales
+        // Insertar datos iniciales
         insertInitialData(db)
     }
 
@@ -63,11 +61,25 @@ class DatabaseHelper(context: Context) :
                 put(COL_EDAD, mascota.edad)
                 put(COL_TIPO, mascota.tipo)
                 put(COL_DUENO, mascota.dueno)
-                put(COL_VACUNADO, if (mascota.vacunado) 1 else 0) // 1 para true, 0 para false
+                put(COL_VACUNADO, if (mascota.vacunado) 1 else 0)
                 put(COL_PESO, mascota.peso)
             }
             db.insert(TABLE_NAME, null, values)
         }
+    }
+
+    // Función para insertar una nueva mascota
+    fun insertarMascota(mascota: Mascota) {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COL_NOMBRE, mascota.nombre)
+            put(COL_EDAD, mascota.edad)
+            put(COL_TIPO, mascota.tipo)
+            put(COL_DUENO, mascota.dueno)
+            put(COL_VACUNADO, if (mascota.vacunado) 1 else 0)
+            put(COL_PESO, mascota.peso)
+        }
+        db.insert(TABLE_NAME, null, values)
     }
 
     // Función para obtener todas las mascotas

@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="48dp">
 
+    <EditText
+        android:id="@+id/nombreInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nombre de la mascota"
+    android:minHeight="48dp"
+    android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edadInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Edad de la mascota"
+    android:inputType="number"
+    android:minHeight="48dp"
+    android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/tipoInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    android:hint="Tipo de mascota (Perro, Gato, etc.)"
+    android:minHeight="48dp"
+    android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/duenoInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    android:hint="Dueño de la mascota"
+    android:minHeight="48dp"
+    android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/vacunadoInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Está vacunado?"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/pesoInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    android:hint="Peso de la mascota"
+    android:inputType="numberDecimal"
+    android:minHeight="48dp"
+    android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Mascota"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/consultarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Mascotas"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultados"
+        android:paddingTop="48dp"/>
 </LinearLayout>

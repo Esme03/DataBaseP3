@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Practica_03</string>
+    <string name="edad_de_la_mascota">Edad de la mascota</string>
+    <string name="nombre_de_la_mascota">Nombre de la mascota</string>
+    <string name="tipo_de_mascota_perro_gato_etc">Tipo de mascota (Perro, Gato, etc.)</string>
+    <string name="due_o_de_la_mascota">Dueño de la mascota</string>
+    <string name="est_vacunado">¿Está vacunado?</string>
+    <string name="peso_de_la_mascota">Peso de la mascota</string>
+    <string name="guardar_mascota">Guardar Mascota</string>
+    <string name="consultar_mascotas">Consultar Mascotas</string>
+    <string name="resultados">Resultados</string>
 </resources>
